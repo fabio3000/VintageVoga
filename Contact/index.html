@@ -24,36 +24,7 @@ label,a
 
 <body>
 <h1>Contact us</h1>
-<form method="POST" name="contactform" action="contact-form-handler.php"> 
-<p>
-<label for='name'>Your Name:</label> <br>
-<input type="text" name="name">
-</p>
-<p>
-<label for='email'>Email Address:</label> <br>
-<input type="text" name="email"> <br>
-</p>
-<p>
-<label for='message'>Message:</label> <br>
-<textarea name="message"></textarea>
-</p>
-<input type="submit" value="Submit"><br>
-</form>
-
-<script language="JavaScript">
-// Code for validating the form
-// Visit http://www.javascript-coder.com/html-form/javascript-form-validation.phtml
-// for details
-var frmvalidator  = new Validator("contactform");
-frmvalidator.addValidation("name","req","Please provide your name"); 
-frmvalidator.addValidation("email","req","Please provide your email"); 
-frmvalidator.addValidation("email","email","Please enter a valid email address"); 
-</script>
-<!--
-Sample code from:
-http://www.html-form-guide.com/contact-form/php-email-contact-form.html
--->
-
+<form action="http://formspree.io/FabioSkill@gmx.net"><input type="email" name="_replyto"><textarea   name="body"></textarea><input type="submit" value="Send"></form>
 
 </body>
 </html>
