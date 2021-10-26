@@ -96,10 +96,12 @@
           <p class="leading-normal text-2xl mb-8">
             Gewinnen Sie mehr Kunden, erhöhen Sie Ihre Reichweite und steigern Sie die Kundenzufriedenheit! <br /> <br /> Wir erledigen die Arbeit für Sie!
           </p>    <div id="wrapper2">
-          <button class="openbot2 mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+      <button 
+            id="navAction"
+            class="openbot2 mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full mt-4 lg:mt-0 py-4 px-8 shadow opacity-75 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out" 
+          >
             Kontakt
-          </button>
-        </div>
+          </button> </div>
 		</div>
         <!--Right Col-->
         <div class="w-full md:w-3/5 py-6 text-center">
@@ -329,14 +331,15 @@ In den mehr als vier Jahren haben wir eine Vielzahl von Einzelprojekten in den u
                 £x.99
                 <span class="text-base">/ per user</span>
               </div>
-              <div class="flex items-center justify-center">
+              <div class="flex items-center justify-center">  <div id="wrapper7">
                 <button
-            id="navAction"
-            class="openbot mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full mt-4 lg:mt-0 py-4 px-8 shadow opacity-75 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out" 
+            id="navAction" 
+            class="openbot7 mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full mt-4 lg:mt-0 py-4 px-8 shadow opacity-75 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out" 
           >
             Kontakt
           </button>
               </div>
+			  </div>
             </div>
           </div>
         </div>
@@ -615,7 +618,18 @@ In den mehr als vier Jahren haben wir eine Vielzahl von Einzelprojekten in den u
 
 </script>
 
+<script>
+    var myLandbotpop = new Landbot.Popup({
+      configUrl: 'https://chats.landbot.io/v3/H-1027270-J4AMMIBXTOVFYQ1D/index.json'
+    });
+    
+    var buttonOpen = document.getElementsByClassName("openbot7")[0];
+    buttonOpen.addEventListener('click', (event) => {
+      event.preventDefault();
+      myLandbotpop.open()
+    });
 
+</script>
 
 
   </body>
