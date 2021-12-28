@@ -1,821 +1,728 @@
+
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
+
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>
-      Biskia: Develop & Design
-    </title>
-    <meta name="description" content="" />
-    <meta name="keywords" content="" />
-    <meta name="author" content="" />
-    <link rel="stylesheet" href="https://unpkg.com/tailwindcss/dist/tailwind.min.css" />
-    <!--Replace with your tailwind.css once created-->
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet" />
-    <!-- Define your gradient here - use online tools to find a gradient matching your branding-->
-    <style>
-      .gradient {
-       background: linear-gradient(to right top, #1b5acf, #3469d5, #4878da, #5b86de, #6d95e2, #68a3eb, #67b1f2, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
-      }
-    </style>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
+    <title>Chain App Dev - App Landing Page HTML5 Template</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+<!--
+
+TemplateMo 570 Chain App Dev
+
+https://templatemo.com/tm-570-chain-app-dev
+
+-->
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/templatemo-chain-app-dev.css">
+    <link rel="stylesheet" href="assets/css/animated.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+
   </head>
-  <body class="leading-normal tracking-normal text-white gradient" style="font-family: 'Source Sans Pro', sans-serif;">
-    <!--Nav-->
-    <nav id="header" class="fixed w-full z-30 top-0 text-white">
-      <div class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-2">
-        <div class="pl-4 flex items-center">
-          <a class="toggleColour text-white no-underline hover:no-underline font-bold text-2xl lg:text-4xl" href="#">
-            <!--Icon from: http://www.potlabicons.com/ -->
-            
-            <img src="/Biskia/Pictures/BiskiaWithWite.jpg" alt="Biskia" width="155"  height=auto/>
-            
-          </a>
-        </div>
-		
-		
-		
-		
 
+<body>
 
-        <div class="block lg:hidden pr-4">
-          <button id="nav-toggle" class="flex items-center p-1 text-grey-800 hover:text-gray-900 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
-            <svg class=" h-6 w-6" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-              <title>Menü</title>
-              <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
-            </svg>
-          </button>
-        </div>        
-		<div class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden mt-2 lg:mt-0 bg-white lg:bg-transparent text-black p-4 lg:p-0 z-20" id="nav-content">
-
-          <ul class="list-reset lg:flex justify-end flex-1 items-center">
-            <li class="mr-3">
-              <a class="inline-block py-2 px-4 text-black font-bold no-underline" href="#">Active</a>
-            </li>
-            <li class="mr-3">
-              <a class="inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4" href="#">link</a>
-            </li>
-            <li class="mr-3">
-              <a class="inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4" href="#">link</a>
-            </li>
-          </ul>
-		  
-		  
-		  
-		  <div id="wrapper">
-          <button 
-            id="navAction"
-            class="openbot mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full mt-4 lg:mt-0 py-4 px-8 shadow opacity-75 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out" 
-          >
-            Kontakt
-          </button>
-		  
-		  </div>
-        </div>
-		
-		
-		
-		
+  <!-- ***** Preloader Start ***** -->
+  <div id="js-preloader" class="js-preloader">
+    <div class="preloader-inner">
+      <span class="dot"></span>
+      <div class="dots">
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
-      <hr class="border-b border-gray-100 opacity-25 my-0 py-0" />
-    </nav>
-    <!--Hero-->
-	<center>
-    <div class="pt-24"> <img src="/Biskia/Pictures/EBC69F1D-8D0E-44DD-BB30-373765A33485.png" alt="Alexa Service">
-	</center>
-   <!--Left Col-->
-   <div class="container px-3 mx-auto flex flex-wrap flex-col md:flex-row  text-align: right">
-	  
-        
-        <div class="flex flex-col w-full md:w-2/5 justify-center items-start text-center md:text-left">
-          <p class="uppercase tracking-loose w-full"><!--Entwicklung für Unternehmen--></p>
-          <h1 class="my-4 text-5xl font-bold leading-tight">
-           Wir entwickeln für Sie / Ihr Unternehmen einen professionellen Amazon Alexa Skill! 
-          </h1>
-          <p class="leading-normal text-2xl mb-8">
-            Gewinnen Sie mehr Kunden, erhöhen Sie Ihre Reichweite und steigern Sie die Kundenzufriedenheit! <br /> <br /> Wir erledigen die Arbeit für Sie!
-          </p>    <div id="wrapper2">
-      <button 
-            id="navAction"
-            class="openbot2 mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full mt-4 lg:mt-0 py-4 px-8 shadow opacity-75 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out" 
-          >
-            Kontakt
-          </button> </div> 
-		</div>
-        <!--Right Col-->
-        <div class="w-full md:w-3/5 py-6 text-center ">
-          <img class="w-full " src="/Biskia/Pictures/A8DE476F-3148-4EE4-BA3E-95B252FB0BDC.png" alt="Just ask Amazon Alexa"/>
+    </div>
+  </div>
+  <!-- ***** Preloader End ***** -->
+
+  <!-- ***** Header Area Start ***** -->
+  <header class="header-area header-sticky wow slideInDown" data-wow-duration="0.75s" data-wow-delay="0s">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav class="main-nav">
+            <!-- ***** Logo Start ***** -->
+            <a href="index.html" class="logo">
+              <img src="assets/images/logo.png" alt="Chain App Dev">
+            </a>
+            <!-- ***** Logo End ***** -->
+            <!-- ***** Menu Start ***** -->
+            <ul class="nav">
+              <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
+              <li class="scroll-to-section"><a href="#services">Services</a></li>
+              <li class="scroll-to-section"><a href="#about">About</a></li>
+              <li class="scroll-to-section"><a href="#pricing">Pricing</a></li>
+              <li class="scroll-to-section"><a href="#newsletter">Newsletter</a></li>
+              <li><div class="gradient-button"><a id="modal_trigger" href="#modal"><i class="fa fa-sign-in-alt"></i> Sign In Now</a></div></li> 
+            </ul>        
+            <a class='menu-trigger'>
+                <span>Menu</span>
+            </a>
+            <!-- ***** Menu End ***** -->
+          </nav>
         </div>
       </div>
     </div>
-    <div class="relative -mt-12 lg:-mt-24">
-      <svg viewBox="0 0 1428 174" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-          <g transform="translate(-2.000000, 44.000000)" fill="#FFFFFF" fill-rule="nonzero">
-            <path d="M0,0 C90.7283404,0.927527913 147.912752,27.187927 291.910178,59.9119003 C387.908462,81.7278826 543.605069,89.334785 759,82.7326078 C469.336065,156.254352 216.336065,153.6679 0,74.9732496" opacity="0.100000001"></path>
-            <path
-              d="M100,104.708498 C277.413333,72.2345949 426.147877,52.5246657 546.203633,45.5787101 C666.259389,38.6327546 810.524845,41.7979068 979,55.0741668 C931.069965,56.122511 810.303266,74.8455141 616.699903,111.243176 C423.096539,147.640838 250.863238,145.462612 100,104.708498 Z"
-              opacity="0.100000001"
-            ></path>
-            <path d="M1046,51.6521276 C1130.83045,29.328812 1279.08318,17.607883 1439,40.1656806 L1439,120 C1271.17211,77.9435312 1140.17211,55.1609071 1046,51.6521276 Z" id="Path-4" opacity="0.200000003"></path>
-          </g>
-          <g transform="translate(-4.000000, 76.000000)" fill="#FFFFFF" fill-rule="nonzero">
-            <path
-              d="M0.457,34.035 C57.086,53.198 98.208,65.809 123.822,71.865 C181.454,85.495 234.295,90.29 272.033,93.459 C311.355,96.759 396.635,95.801 461.025,91.663 C486.76,90.01 518.727,86.372 556.926,80.752 C595.747,74.596 622.372,70.008 636.799,66.991 C663.913,61.324 712.501,49.503 727.605,46.128 C780.47,34.317 818.839,22.532 856.324,15.904 C922.689,4.169 955.676,2.522 1011.185,0.432 C1060.705,1.477 1097.39,3.129 1121.236,5.387 C1161.703,9.219 1208.621,17.821 1235.4,22.304 C1285.855,30.748 1354.351,47.432 1440.886,72.354 L1441.191,104.352 L1.121,104.031 L0.457,34.035 Z"
-            ></path>
-          </g>
-        </g>
-      </svg>
+  </header>
+  <!-- ***** Header Area End ***** -->
+  
+  <div id="modal" class="popupContainer" style="display:none;">
+    <div class="popupHeader">
+        <span class="header_title">Login</span>
+        <span class="modal_close"><i class="fa fa-times"></i></span>
     </div>
-    <section class="bg-white border-b py-8">
-      <div class="container max-w-5xl mx-auto m-8">
-        <h2 class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800">
-         Warum ein Amazon Alexa Skill für Ihr Unternehmen?
-        </h2>
-        <div class="w-full mb-4">
-          <div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
-        </div>
-        <div class="flex flex-wrap">
-          <div class="w-5/6 sm:w-1/2 p-6">
-            <h3 class="text-3xl text-gray-800 font-bold leading-none mb-3">
-             Überschrift
-            </h3>
-            <p class="text-gray-600 mb-8">
-              Text
-              
 
-            </p>
-          </div>
-          <div class="w-full sm:w-1/2 p-6">
-             <img src="https://logosmarken.com/wp-content/uploads/2021/03/Amazon-Alexa-Zeichen.png" alt="Amazon Alexa Logo" width="350"  height=auto/>
-          </div>
-        </div>
-        <div class="flex flex-wrap flex-col-reverse sm:flex-row">
-         
-            <div class="w-full sm:w-1/2 p-6">
-             <img src="/Biskia/Pictures/IMG_1440.PNG" alt="Amazon Alexa Developer" width="410"  height=auto/>
-          
-          </div>
-          <div class="w-full sm:w-1/2 p-6 mt-6">
-            <div class="align-middle">
-              <h3 class="text-3xl text-gray-800 font-bold leading-none mb-3">
-                Überschrift
-              </h3>
-              <p class="text-gray-600 mb-8">
-               Text
-                <br />
-                <br />
-                
-				Für mehr Informationen downloaden Sie sich gerne <a class="text-pink-500 underline" href="BiskiaOkt2021.pdf" download>dieses Informationsblatt</a>
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-	<section class="bg-white border-b py-8">
-      <div class="container max-w-5xl mx-auto m-8">
-        <h2 class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800">
-         Und warum wir?
-        </h2>
-        <div class="w-full mb-4">
-          <div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
-        </div>
-        <div class="flex flex-wrap">
-          <div class="w-5/6 sm:w-1/2 p-6">
-            <h3 class="text-3xl text-gray-800 font-bold leading-none mb-3">
-             Überschrift
-            </h3>
-            <p class="text-gray-600 mb-8">
-              Text
-              
+    <section class="popupBody">
+        <!-- Social Login -->
+        <div class="social_login">
+            <div class="">
+                <a href="#" class="social_box fb">
+                    <span class="icon"><i class="fab fa-facebook"></i></span>
+                    <span class="icon_title">Connect with Facebook</span>
 
-            </p>
-          </div>
-          <div class="w-full sm:w-1/2 p-6">
-             <img src="https://logosmarken.com/wp-content/uploads/2021/03/Amazon-Alexa-Zeichen.png" alt="Amazon Alexa Logo" width="350"  height=auto/>
-          </div>
-        </div>
-        <div class="flex flex-wrap flex-col-reverse sm:flex-row">
-         
-            <div class="w-full sm:w-1/2 p-6">
-             <img src="/Biskia/Pictures/IMG_1440.PNG" alt="Amazon Alexa Developer" width="410"  height=auto/>
-          
-          </div>
-          <div class="w-full sm:w-1/2 p-6 mt-6">
-            <div class="align-middle">
-              <h3 class="text-3xl text-gray-800 font-bold leading-none mb-3">
-                Überschrift
-              </h3>
-              <p class="text-gray-600 mb-8">
-               Text
-                <br />
-                <br />
-                
-				Für mehr Informationen downloaden Sie sich gerne <a class="text-pink-500 underline" href="BiskiaOkt2021.pdf" download>dieses Informationsblatt</a>
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-	
-    <section class="bg-white border-b py-8">
-      <div class="container mx-auto flex flex-wrap pt-4 pb-12">
-        <h2 class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800">
-          Unsere Kunden & Projekte
-        </h2>
-		<h3 class="text-center w-full text-base text-gray-800 px-6">
-In den mehr als vier Jahren haben wir eine Vielzahl von Einzelprojekten in den unterschiedlichen Unternehmensbereichen betreut. Das Spektrum reicht von kleineren Projekten bis hin zu komplexen Realisierungen. Nachfolgend finden Sie einige unserer Projekte sowie einen kurzen Überblick über einige unserer Kunden, für die wir Projekte realisiert haben. <br /> <br />      </h3>
-        <div class="w-full mb-4">
-          <div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
-        </div>
-        <div class="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink">
-          <div class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow">
-            <a href="#" class="flex flex-wrap no-underline hover:no-underline">
-              <p class="w-full text-gray-600 text-xs md:text-sm px-6">
-                <a href="https://www.nintendo.com/" title="Nintendo" target="_blank" style="text-decoration:none;"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Nintendo.svg/250px-Nintendo.svg.png" alt="Nintendo" title="Nintendo"  style="height:100%;max-height:50px;width:auto;border:0;"></a>
-              </p>
-              <div class="w-full font-bold text-xl text-gray-800 px-6">
-               #1 Nintendo Switch<sup>1</sup>
-              </div>
-              <p class="text-gray-800 text-base px-6 mb-5">
-               Die Nintendo Switch ist eine Videospielkonsole des japanischen Unternehmens Nintendo. Als sogenannte hybride Konsole lässt sie sich sowohl als stationäre, also mit einem externen Bildschirm verbundene Konsole nutzen, wie auch als tragbare Handheld-Konsole (Quelle: Wikipedia). Bei dem (noch) inoffiziellen "Nintendo Switch" Amazon Alexa Skill können Benutzer nach dem neusten Update für die Spielekonsole oder nach Nintendo Switch Spiele fragen, um Informationen dazu zu erhalten. Außerdem lässt sich ganz einfach Nintendo Musik abspielen. 
-              </p>
-			  
-            </a>
-          </div>
-		  
-		  
-          <div class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow p-6">
-            <div class="flex items-center justify-start">
-              <button onclick="window.open('#', '_blank')" class="mx-auto lg:mx-0 hover:underline gradient text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
-                Mehr!
-              </button>
-            </div>
-          </div>
-        </div>
-        <div class="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink">
-          <div class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow">
-            <a href="#" class="flex flex-wrap no-underline hover:no-underline">
-              <p class="w-full text-gray-600 text-xs md:text-sm px-6">
-                <a href="https://www.google.com/" title="Google" target="_blank" style="text-decoration:none;"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/250px-Google_2015_logo.svg.png" alt="Google" title="Google" style="height:100%;max-height:50px;width:auto;border:0;"></a>
-              </p>
-              <div class="w-full font-bold text-xl text-gray-800 px-6">
-                #2 Quick, Draw!<sup>1</sup>
-              </div>
-              <p class="text-gray-800 text-base px-6 mb-5">
-"Quick, Draw!" ist ein von Google LLC entwickeltes Browserspiel, bei dem der Spieler die Aufgabe hat, innerhalb von 19 Sekunden eine Skizze von einem zufällig ausgewählten Objekt oder Wort zu zeichnen. Währenddessen versucht eine künstlichen Intelligenz (KI) eines künstlichen neuronalen Netzwerkes (KNN) so schnell wie möglich zu erraten, was die Zeichnung darstellen soll. Das Spiel basiert auf Deep Learning, einem Teilgebiet vom maschinellem Lernen (Quelle: Wikipedia). Der (inoffizielle) Amazon Alexa Skill startet diese Anwendung auf Amazon Echo Garäten mit Bildschirm. 
-              </p>
-            </a>
-          </div>
-          <div class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow p-6">
-            <div class="flex items-center justify-center">
-              <button onclick="window.open('https://www.amazon.de/dp/B092MXGVPT', '_blank')" class="mx-auto lg:mx-0 hover:underline gradient text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
-                Mehr!
-              </button>
-            </div>
-          </div>
-        </div>
-        <div class="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink">
-          <div class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow">
-            <a href="#" class="flex flex-wrap no-underline hover:no-underline">
-              <p class="w-full text-gray-600 text-xs md:text-sm px-6">
-      <a href="https://www.vintagevoga.com/" title="Vintage Voga" target="_blank" style="text-decoration:none;"><img src="https://assets.bigcartel.com/account_images/4539360/62BF29E3-F363-4B0C-AC42-8B1227A29453.png" alt="Vintage Voga" title="Vintage Voga" style="height:100%;max-height:50px;width:auto;border:0;"></a>
+                </a>
 
-              </p>
-              <div class="w-full font-bold text-xl text-gray-800 px-6">
-                #3 Vintage Voga<sup>2</sup>
-              </div>
-              <p class="text-gray-800 text-base px-6 mb-5">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at ipsum eu nunc commodo posuere et sit amet ligula.
-              </p>
-            </a>
-          </div>
-          <div class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow p-6">
-            <div class="flex items-center justify-end">
-              <button onclick="window.open('#', '_blank')" class="mx-auto lg:mx-0 hover:underline gradient text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
-                Mehr!
-              </button>
+                <a href="#" class="social_box google">
+                    <span class="icon"><i class="fab fa-google-plus"></i></span>
+                    <span class="icon_title">Connect with Google</span>
+                </a>
             </div>
-          </div>
-        </div>
-		 <div class="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink">
-          <div class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow">
-            <a href="#" class="flex flex-wrap no-underline hover:no-underline">
-              <p class="w-full text-gray-600 text-xs md:text-sm px-6">
-                xGETTING STARTED
-              </p>
-              <div class="w-full font-bold text-xl text-gray-800 px-6">
-                Lorem ipsum dolor sit amet.
-              </div>
-              <p class="text-gray-800 text-base px-6 mb-5">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at ipsum eu nunc commodo posuere et sit amet ligula.
-              </p>
-            </a>
-          </div>
-          <div class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow p-6">
-            <div class="flex items-center justify-start">
-              <button class="mx-auto lg:mx-0 hover:underline gradient text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
-                Action
-              </button>
+
+            <div class="centeredText">
+                <span>Or use your Email address</span>
             </div>
-          </div>
-        </div>
-        <div class="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink">
-          <div class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow">
-            <a href="#" class="flex flex-wrap no-underline hover:no-underline">
-              <p class="w-full text-gray-600 text-xs md:text-sm px-6">
-                xGETTING STARTED
-              </p>
-              <div class="w-full font-bold text-xl text-gray-800 px-6">
-                Lorem ipsum dolor sit amet.
-              </div>
-              <p class="text-gray-800 text-base px-6 mb-5">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at ipsum eu nunc commodo posuere et sit amet ligula.
-              </p>
-            </a>
-          </div>
-          <div class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow p-6">
-            <div class="flex items-center justify-center">
-              <button class="mx-auto lg:mx-0 hover:underline gradient text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
-                Action
-              </button>
+
+            <div class="action_btns">
+                <div class="one_half"><a href="#" id="login_form" class="btn">Login</a></div>
+                <div class="one_half last"><a href="#" id="register_form" class="btn">Sign up</a></div>
             </div>
-          </div>
         </div>
-        <div class="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink">
-          <div class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow">
-            <a href="#" class="flex flex-wrap no-underline hover:no-underline">
-              <p class="w-full text-gray-600 text-xs md:text-sm px-6">
-                xGETTING STARTED
-              </p>
-              <div class="w-full font-bold text-xl text-gray-800 px-6">
-                Lorem ipsum dolor sit amet.
+
+        <!-- Username & Password Login form -->
+        <div class="user_login">
+            <form>
+                <label>Email / Username</label>
+                <input type="text" />
+                <br />
+
+                <label>Password</label>
+                <input type="password" />
+                <br />
+
+                <div class="checkbox">
+                    <input id="remember" type="checkbox" />
+                    <label for="remember">Remember me on this computer</label>
+                </div>
+
+                <div class="action_btns">
+                    <div class="one_half"><a href="#" class="btn back_btn"><i class="fa fa-angle-double-left"></i> Back</a></div>
+                    <div class="one_half last"><a href="#" class="btn btn_red">Login</a></div>
+                </div>
+            </form>
+
+            <a href="#" class="forgot_password">Forgot password?</a>
+        </div>
+
+        <!-- Register Form -->
+        <div class="user_register">
+            <form>
+                <label>Full Name</label>
+                <input type="text" />
+                <br />
+
+                <label>Email Address</label>
+                <input type="email" />
+                <br />
+
+                <label>Password</label>
+                <input type="password" />
+                <br />
+
+                <div class="checkbox">
+                    <input id="send_updates" type="checkbox" />
+                    <label for="send_updates">Send me occasional email updates</label>
+                </div>
+
+                <div class="action_btns">
+                    <div class="one_half"><a href="#" class="btn back_btn"><i class="fa fa-angle-double-left"></i> Back</a></div>
+                    <div class="one_half last"><a href="#" class="btn btn_red">Register</a></div>
+                </div>
+            </form>
+        </div>
+    </section>
+</div>
+
+  <div class="main-banner wow fadeIn" id="top" data-wow-duration="1s" data-wow-delay="0.5s">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="row">
+            <div class="col-lg-6 align-self-center">
+              <div class="left-content show-up header-text wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1s">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <h2>Get The Latest App From App Stores</h2>
+                    <p>Chain App Dev is an app landing page HTML5 template based on Bootstrap v5.1.3 CSS layout provided by TemplateMo, a great website to download free CSS templates.</p>
+                  </div>
+                  <div class="col-lg-12">
+                    <div class="white-button first-button scroll-to-section">
+                      <a href="#contact">Free Quote <i class="fab fa-apple"></i></a>
+                    </div>
+                    <div class="white-button scroll-to-section">
+                      <a href="#contact">Free Quote <i class="fab fa-google-play"></i></a>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <p class="text-gray-800 text-base px-6 mb-5">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at ipsum eu nunc commodo posuere et sit amet ligula.
-              </p>
-            </a>
-          </div>
-          <div class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow p-6">
-            <div class="flex items-center justify-end">
-              <button class="mx-auto lg:mx-0 hover:underline gradient text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
-                Action
-              </button>
+            </div>
+            <div class="col-lg-6">
+              <div class="right-image wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
+                <img src="assets/images/slider-dec.png" alt="">
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
-	 
-       
-      
-	
-	
-	<section class="bg-white border-b py-8">
-      <div class="container mx-auto flex flex-wrap pt-4 pb-12">
-        <h2 class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800">
-         Meinungen unserer Kunden:
-        </h2>
-	 <div class="w-full mb-4">
-          <div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
-        </div>
-        <div class="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink">
-          <div class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow">
-            <a href="#" class="flex flex-wrap no-underline hover:no-underline">
-              <p class="w-full text-gray-600 text-xs md:text-sm px-6">
-               &#11088;&#11088;&#11088;&#11088;&#11088; 5-Sterne Bewertung
-              </p>
-              <div class="w-full font-bold text-xl text-gray-800 px-6">
-                Schnell und einfach!
-				
-              </div>
-              <p class="text-gray-800 text-base px-6 mb-5">
-              „Schnelle und einfache Kommunikation, um einen Podcast-Alexa-Skill zu entwickeln."
-              </p>
-            </a>
+    </div>
+  </div>
+
+  <div id="services" class="services section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 offset-lg-2">
+          <div class="section-heading  wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.5s">
+            <h4>Amazing <em>Services &amp; Features</em> for you</h4>
+            <img src="assets/images/heading-line-dec.png" alt="">
+            <p>If you need the greatest collection of HTML templates for your business, please visit <a rel="nofollow" href="https://www.toocss.com/" target="_blank">TooCSS</a> Blog. If you need to have a contact form PHP script, go to <a href="https://templatemo.com/contact" target="_parent">our contact page</a> for more information.</p>
           </div>
-          
-        </div>
-        <div class="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink">
-          <div class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow">
-            <a href="#" class="flex flex-wrap no-underline hover:no-underline">
-              <p class="w-full text-gray-600 text-xs md:text-sm px-6">
-                &#11088;&#11088;&#11088;&#11088;&#11088; 5-Sterne Bewertung
-              </p>
-              <div class="w-full font-bold text-xl text-gray-800 px-6">
-                Unkompliziert, schnell, gute Beratung!
-              </div>
-              <p class="text-gray-800 text-base px-6 mb-5">
-             „Einfach top! Die Kommunikation war unkompliziert und die Beratung sehr gut. Auch die Lieferung erfolgte schnell und genau nach Absprache. Sehr zu empfehlen, wenn man schnell und unkompliziert einen Alexa-Skill genau nach seinen Wünschen konzipiert haben möchte. Immer wieder gerne!"              </p>
-            </a>
-          </div>
-          
-        </div>
-        <div class="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink">
-          <div class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow">
-            <a href="#" class="flex flex-wrap no-underline hover:no-underline">
-              <p class="w-full text-gray-600 text-xs md:text-sm px-6">
-                &#11088;&#11088;&#11088;&#11088;&#11088; 5-Sterne Bewertung
-              </p>
-              <div class="w-full font-bold text-xl text-gray-800 px-6">
-                Schnell & am besten
-              </div>
-              <p class="text-gray-800 text-base px-6 mb-5">
-             „Top sehr schnell und bester Service"
-              </p>
-            </a>
-          </div>
-         
         </div>
       </div>
-    </section>
-	
-	
-	
-    <section class="bg-gray-100 py-8">
-      <div class="container mx-auto px-2 pt-4 pb-12 text-gray-800">
-        <h2 class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800">
-          Preisgestaltung
-        </h2>
-        <div class="w-full mb-4">
-          <div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3">
+          <div class="service-item first-service">
+            <div class="icon"></div>
+            <h4>App Maintenance</h4>
+            <p>You are not allowed to redistribute this template ZIP file on any other website.</p>
+            <div class="text-button">
+              <a href="#">Read More <i class="fa fa-arrow-right"></i></a>
+            </div>
+          </div>
         </div>
-        <div class="flex flex-col sm:flex-row justify-center pt-12 my-12 sm:my-4">
-          <div class="flex flex-col w-5/6 lg:w-1/4 mx-auto lg:mx-0 rounded-none lg:rounded-l-lg bg-white mt-4">
-            <div class="flex-1 bg-white text-gray-600 rounded-t rounded-b-none overflow-hidden shadow">
-              <div class="p-8 text-3xl font-bold text-center border-b-4">
-                Kostenlos &#127379;
-              </div>
-              <ul class="w-full text-center text-sm">
-                <li class="border-b py-4">Erstberatung</li>
-                <li class="border-b py-4">Vorschläge für potentielle Umsetzung</li>
-                <li class="border-b py-4">E-Mail Support</li>
-              </ul>
-            </div>
-            <div class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow p-6">
-              <div class="w-full pt-6 text-3xl text-gray-600 font-bold text-center">
-                0.00€
-                <span style="font-size:11pt" class="text-base"></span>
-              </div>
-              <div class="flex items-center justify-center">
-                   <div id="wrapper3"> <button 
-            id="navAction"
-            class="openbot3 mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full mt-4 lg:mt-0 py-4 px-8 shadow opacity-75 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out" 
-          >
-            Kontakt
-          </button>
-              </div>
-			  </div>
+        <div class="col-lg-3">
+          <div class="service-item second-service">
+            <div class="icon"></div>
+            <h4>Rocket Speed of App</h4>
+            <p>You are allowed to use the Chain App Dev HTML template. Feel free to modify or edit this layout.</p>
+            <div class="text-button">
+              <a href="#">Read More <i class="fa fa-arrow-right"></i></a>
             </div>
           </div>
-          <div class="flex flex-col w-5/6 lg:w-1/3 mx-auto lg:mx-0 rounded-lg bg-white mt-4 sm:-mt-6 shadow-lg z-10">
-            <div class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow">
-              <div class="w-full p-8 text-3xl font-bold text-center">Basic &#128175; </div>
-              <div class="h-1 w-full gradient my-0 py-0 rounded-t"></div>
-              <ul class="w-full text-center text-base font-bold">
-                <li class="border-b py-4">Alles wie bei Free</li>
-                <li class="border-b py-4">Individuelle Beratung</li>
-                <li class="border-b py-4">Skill Entwicklung</li>
-                <li class="border-b py-4">Live Chat Support</li>
-              </ul>
-            </div>
-            <div class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow p-6">
-              <div class="w-full pt-6 text-4xl font-bold text-center">
-                ab 4.99€
-                <span style="font-size:11pt" class="text-base">/ pro Monat oder einmalig 199.99€</span>
-              </div>
-              <div class="flex items-center justify-center">    <div id="wrapper4">
-                <button
-            id="navAction"
-            class="openbot4 mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full mt-4 lg:mt-0 py-4 px-8 shadow opacity-75 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out" 
-          >
-            Kontakt
-          </button>
-              </div>
-			  </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="service-item third-service">
+            <div class="icon"></div>
+            <h4>Multi Workflow Idea</h4>
+            <p>If this template is beneficial for your work, please support us <a rel="nofollow" href="https://paypal.me/templatemo" target="_blank">a little via PayPal</a>. Thank you.</p>
+            <div class="text-button">
+              <a href="#">Read More <i class="fa fa-arrow-right"></i></a>
             </div>
           </div>
-          <div class="flex flex-col w-5/6 lg:w-1/4 mx-auto lg:mx-0 rounded-none lg:rounded-l-lg bg-white mt-4">
-            <div class="flex-1 bg-white text-gray-600 rounded-t rounded-b-none overflow-hidden shadow">
-              <div class="p-8 text-3xl font-bold text-center border-b-4">
-                Pro &#129489;&#127997;&#8205;&#128187;
-              </div>
-              <ul class="w-full text-center text-sm">
-                <li class="border-b py-4">Alles wie bei Basic</li>
-                <li class="border-b py-4">Komplexe Skill Entwicklung</li>
-                <li class="border-b py-4">An Unternehmen angepasst</li>
-              </ul>
-            </div>
-            <div class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow p-6">
-              <div class="w-full pt-6 text-3xl text-gray-600 font-bold text-center">
-                ab 9.99€
-                <span style="font-size:11pt" class="text-base">/ pro Monat oder einmalig 399.99€</span>
-              </div>
-              <div class="flex items-center justify-center">  <div id="wrapper7">
-                <button
-            id="navAction" 
-            class="openbot7 mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full mt-4 lg:mt-0 py-4 px-8 shadow opacity-75 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out" 
-          >
-            Kontakt
-          </button>
-              </div>
-			  </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="service-item fourth-service">
+            <div class="icon"></div>
+            <h4>24/7 Help &amp; Support</h4>
+            <p>Lorem ipsum dolor consectetur adipiscing elit sedder williamsburg photo booth quinoa and fashion axe.</p>
+            <div class="text-button">
+              <a href="#">Read More <i class="fa fa-arrow-right"></i></a>
             </div>
           </div>
         </div>
       </div>
-    </section>
-    <!-- Change the colour #f8fafc to match the previous section colour -->
-    <svg class="wave-top" viewBox="0 0 1439 147" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-      <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g transform="translate(-1.000000, -14.000000)" fill-rule="nonzero">
-          <g class="wave" fill="#f8fafc">
-            <path
-              d="M1440,84 C1383.555,64.3 1342.555,51.3 1317,45 C1259.5,30.824 1206.707,25.526 1169,22 C1129.711,18.326 1044.426,18.475 980,22 C954.25,23.409 922.25,26.742 884,32 C845.122,37.787 818.455,42.121 804,45 C776.833,50.41 728.136,61.77 713,65 C660.023,76.309 621.544,87.729 584,94 C517.525,105.104 484.525,106.438 429,108 C379.49,106.484 342.823,104.484 319,102 C278.571,97.783 231.737,88.736 205,84 C154.629,75.076 86.296,57.743 0,32 L0,0 L1440,0 L1440,84 Z"
-            ></path>
-          </g>
-          <g transform="translate(1.000000, 15.000000)" fill="#FFFFFF">
-            <g transform="translate(719.500000, 68.500000) rotate(-180.000000) translate(-719.500000, -68.500000) ">
-              <path d="M0,0 C90.7283404,0.927527913 147.912752,27.187927 291.910178,59.9119003 C387.908462,81.7278826 543.605069,89.334785 759,82.7326078 C469.336065,156.254352 216.336065,153.6679 0,74.9732496" opacity="0.100000001"></path>
-              <path
-                d="M100,104.708498 C277.413333,72.2345949 426.147877,52.5246657 546.203633,45.5787101 C666.259389,38.6327546 810.524845,41.7979068 979,55.0741668 C931.069965,56.122511 810.303266,74.8455141 616.699903,111.243176 C423.096539,147.640838 250.863238,145.462612 100,104.708498 Z"
-                opacity="0.100000001"
-              ></path>
-              <path d="M1046,51.6521276 C1130.83045,29.328812 1279.08318,17.607883 1439,40.1656806 L1439,120 C1271.17211,77.9435312 1140.17211,55.1609071 1046,51.6521276 Z" opacity="0.200000003"></path>
-            </g>
-          </g>
-        </g>
-      </g>
-    </svg>
-    <section class="container mx-auto text-center py-6 mb-12">
-      <h1 class="w-full my-2 text-5xl font-bold leading-tight text-center text-white">
-        Jetzt loslegen
-      </h1>
-      <div class="w-full mb-4">
-        <div class="h-1 mx-auto bg-white w-1/6 opacity-25 my-0 py-0 rounded-t"></div>
-      </div>
-      <h3 class="my-4 text-3xl leading-tight">
-        Es gibt keinen Grund, das Angebot abzulehnen!
-      </h3>    <div id="wrapper5">
-      <button 
-            id="navAction"
-            class="openbot5 mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full mt-4 lg:mt-0 py-4 px-8 shadow opacity-75 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out" 
-          >
-            Kontakt
-          </button> </div>
-    </section>
-    <!--Footer-->
-    <footer class="bg-white">
-      <div class="container mx-auto px-8">
-        <div class="w-full flex flex-col md:flex-row py-6">
-          <div class="flex-1 mb-6 text-black">
-            <a class="text-pink-600 no-underline hover:no-underline font-bold text-2xl lg:text-4xl" href="#">
-             
-               <img src="/Biskia/Pictures/6FB50C58-3FF5-44C9-9651-4D2ADCDDB970.png" alt="Biskia" width="100"  height=auto/>
-              
-            </a>
+    </div>
+  </div>
+
+  <div id="about" class="about-us section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 align-self-center">
+          <div class="section-heading">
+            <h4>About <em>What We Do</em> &amp; Who We Are</h4>
+            <img src="assets/images/heading-line-dec.png" alt="">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eismod tempor incididunt ut labore et dolore magna.</p>
           </div>
-          <div class="flex-1">
-            <p class="uppercase text-gray-500 md:mb-6">Links</p>
-            <ul class="list-reset mb-6">
-              <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-                <a href="/Biskia/FAQ" class="no-underline hover:underline text-gray-800 hover:text-pink-500"><del>FAQ</del></a>
-              </li>
-              <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-                <a href="/Biskia/Credits" class="no-underline hover:underline text-gray-800 hover:text-pink-500">Credits</a>
-              </li>
-              <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-                <a href="/Biskia/Contact" class="no-underline hover:underline text-gray-800 hover:text-pink-500"><del>Support</del></a>
-              </li>
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="box-item">
+                <h4><a href="#">Maintance Problems</a></h4>
+                <p>Lorem Ipsum Text</p>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="box-item">
+                <h4><a href="#">24/7 Support &amp; Help</a></h4>
+                <p>Lorem Ipsum Text</p>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="box-item">
+                <h4><a href="#">Fixing Issues About</a></h4>
+                <p>Lorem Ipsum Text</p>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="box-item">
+                <h4><a href="#">Co. Development</a></h4>
+                <p>Lorem Ipsum Text</p>
+              </div>
+            </div>
+            <div class="col-lg-12">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eismod tempor idunte ut labore et dolore adipiscing  magna.</p>
+              <div class="gradient-button">
+                <a href="#">Start 14-Day Free Trial</a>
+              </div>
+              <span>*No Credit Card Required</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="right-image">
+            <img src="assets/images/about-right-dec.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="clients" class="the-clients">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 offset-lg-2">
+          <div class="section-heading">
+            <h4>Check What <em>The Clients Say</em> About Our App Dev</h4>
+            <img src="assets/images/heading-line-dec.png" alt="">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eismod tempor incididunt ut labore et dolore magna.</p>
+          </div>
+        </div>
+        <div class="col-lg-12">
+          <div class="naccs">
+            <div class="grid">
+              <div class="row">
+                <div class="col-lg-7 align-self-center">
+                  <div class="menu">
+                    <div class="first-thumb active">
+                      <div class="thumb">
+                        <div class="row">
+                          <div class="col-lg-4 col-sm-4 col-12">
+                            <h4>David Martino Co</h4>
+                            <span class="date">30 November 2021</span>
+                          </div>
+                          <div class="col-lg-4 col-sm-4 d-none d-sm-block">
+                            <span class="category">Financial Apps</span>
+                          </div>
+                          <div class="col-lg-4 col-sm-4 col-12">
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <span class="rating">4.8</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="thumb">
+                        <div class="row">
+                          <div class="col-lg-4 col-sm-4 col-12">
+                            <h4>Jake Harris Nyo</h4>
+                            <span class="date">29 November 2021</span>
+                          </div>
+                          <div class="col-lg-4 col-sm-4 d-none d-sm-block">
+                            <span class="category">Digital Business</span>
+                          </div>
+                          <div class="col-lg-4 col-sm-4 col-12">
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <span class="rating">4.5</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="thumb">
+                        <div class="row">
+                          <div class="col-lg-4 col-sm-4 col-12">
+                            <h4>May Catherina</h4>
+                            <span class="date">27 November 2021</span>
+                          </div>
+                          <div class="col-lg-4 col-sm-4 d-none d-sm-block">
+                            <span class="category">Business &amp; Economics</span>
+                          </div>
+                          <div class="col-lg-4 col-sm-4 col-12">
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <span class="rating">4.7</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="thumb">
+                        <div class="row">
+                          <div class="col-lg-4 col-sm-4 col-12">
+                            <h4>Random User</h4>
+                            <span class="date">24 November 2021</span>
+                          </div>
+                          <div class="col-lg-4 col-sm-4 d-none d-sm-block">
+                            <span class="category">New App Ecosystem</span>
+                          </div>
+                          <div class="col-lg-4 col-sm-4 col-12">
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <span class="rating">3.9</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="last-thumb">
+                      <div class="thumb">
+                        <div class="row">
+                          <div class="col-lg-4 col-sm-4 col-12">
+                            <h4>Mark Amber Do</h4>
+                            <span class="date">21 November 2021</span>
+                          </div>
+                          <div class="col-lg-4 col-sm-4 d-none d-sm-block">
+                            <span class="category">Web Development</span>
+                          </div>
+                          <div class="col-lg-4 col-sm-4 col-12">
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <span class="rating">4.3</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div> 
+                <div class="col-lg-5">
+                  <ul class="nacc">
+                    <li class="active">
+                      <div>
+                        <div class="thumb">
+                          <div class="row">
+                            <div class="col-lg-12">
+                              <div class="client-content">
+                                <img src="assets/images/quote.png" alt="">
+                                <p>“Lorem ipsum dolor sit amet, consectetur adpiscing elit, sed do eismod tempor idunte ut labore et dolore magna aliqua darwin kengan
+                                  lorem ipsum dolor sit amet, consectetur picing elit massive big blasta.”</p>
+                              </div>
+                              <div class="down-content">
+                                <img src="assets/images/client-image.jpg" alt="">
+                                <div class="right-content">
+                                  <h4>David Martino</h4>
+                                  <span>CEO of David Company</span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div>
+                        <div class="thumb">
+                          <div class="row">
+                            <div class="col-lg-12">
+                              <div class="client-content">
+                                <img src="assets/images/quote.png" alt="">
+                                <p>“CTO, Lorem ipsum dolor sit amet, consectetur adpiscing elit, sed do eismod tempor idunte ut labore et dolore magna aliqua darwin kengan
+                                  lorem ipsum dolor sit amet, consectetur picing elit massive big blasta.”</p>
+                              </div>
+                              <div class="down-content">
+                                <img src="assets/images/client-image.jpg" alt="">
+                                <div class="right-content">
+                                  <h4>Jake H. Nyo</h4>
+                                  <span>CTO of Digital Company</span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div>
+                        <div class="thumb">
+                          <div class="row">
+                            <div class="col-lg-12">
+                              <div class="client-content">
+                                <img src="assets/images/quote.png" alt="">
+                                <p>“May, Lorem ipsum dolor sit amet, consectetur adpiscing elit, sed do eismod tempor idunte ut labore et dolore magna aliqua darwin kengan
+                                  lorem ipsum dolor sit amet, consectetur picing elit massive big blasta.”</p>
+                              </div>
+                              <div class="down-content">
+                                <img src="assets/images/client-image.jpg" alt="">
+                                <div class="right-content">
+                                  <h4>May C.</h4>
+                                  <span>Founder of Catherina Co.</span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div>
+                        <div class="thumb">
+                          <div class="row">
+                            <div class="col-lg-12">
+                              <div class="client-content">
+                                <img src="assets/images/quote.png" alt="">
+                                <p>“Lorem ipsum dolor sit amet, consectetur adpiscing elit, sed do eismod tempor idunte ut labore et dolore magna aliqua darwin kengan
+                                  lorem ipsum dolor sit amet, consectetur picing elit massive big blasta.”</p>
+                              </div>
+                              <div class="down-content">
+                                <img src="assets/images/client-image.jpg" alt="">
+                                <div class="right-content">
+                                  <h4>Random Staff</h4>
+                                  <span>Manager, Digital Company</span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div>
+                        <div class="thumb">
+                          <div class="row">
+                            <div class="col-lg-12">
+                              <div class="client-content">
+                                <img src="assets/images/quote.png" alt="">
+                                <p>“Mark, Lorem ipsum dolor sit amet, consectetur adpiscing elit, sed do eismod tempor idunte ut labore et dolore magna aliqua darwin kengan
+                                  lorem ipsum dolor sit amet, consectetur picing elit massive big blasta.”</p>
+                              </div>
+                              <div class="down-content">
+                                <img src="assets/images/client-image.jpg" alt="">
+                                <div class="right-content">
+                                  <h4>Mark Am</h4>
+                                  <span>CTO, Amber Do Company</span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>          
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="pricing" class="pricing-tables">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 offset-lg-2">
+          <div class="section-heading">
+            <h4>We Have The Best Pre-Order <em>Prices</em> You Can Get</h4>
+            <img src="assets/images/heading-line-dec.png" alt="">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eismod tempor incididunt ut labore et dolore magna.</p>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="pricing-item-regular">
+            <span class="price">$12</span>
+            <h4>Standard Plan App</h4>
+            <div class="icon">
+              <img src="assets/images/pricing-table-01.png" alt="">
+            </div>
+            <ul>
+              <li>Lorem Ipsum Dolores</li>
+              <li>20 TB of Storage</li>
+              <li class="non-function">Life-time Support</li>
+              <li class="non-function">Premium Add-Ons</li>
+              <li class="non-function">Fastest Network</li>
+              <li class="non-function">More Options</li>
+            </ul>
+            <div class="border-button">
+              <a href="#">Purchase This Plan Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="pricing-item-pro">
+            <span class="price">$25</span>
+            <h4>Business Plan App</h4>
+            <div class="icon">
+              <img src="assets/images/pricing-table-01.png" alt="">
+            </div>
+            <ul>
+              <li>Lorem Ipsum Dolores</li>
+              <li>50 TB of Storage</li>
+              <li>Life-time Support</li>
+              <li>Premium Add-Ons</li>
+              <li class="non-function">Fastest Network</li>
+              <li class="non-function">More Options</li>
+            </ul>
+            <div class="border-button">
+              <a href="#">Purchase This Plan Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="pricing-item-regular">
+            <span class="price">$66</span>
+            <h4>Premium Plan App</h4>
+            <div class="icon">
+              <img src="assets/images/pricing-table-01.png" alt="">
+            </div>
+            <ul>
+              <li>Lorem Ipsum Dolores</li>
+              <li>120 TB of Storage</li>
+              <li>Life-time Support</li>
+              <li>Premium Add-Ons</li>
+              <li>Fastest Network</li>
+              <li>More Options</li>
+            </ul>
+            <div class="border-button">
+              <a href="#">Purchase This Plan Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> 
+
+  <footer id="newsletter">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 offset-lg-2">
+          <div class="section-heading">
+            <h4>Join our mailing list to receive the news &amp; latest trends</h4>
+          </div>
+        </div>
+        <div class="col-lg-6 offset-lg-3">
+          <form id="search" action="#" method="GET">
+            <div class="row">
+              <div class="col-lg-6 col-sm-6">
+                <fieldset>
+                  <input type="address" name="address" class="email" placeholder="Email Address..." autocomplete="on" required>
+                </fieldset>
+              </div>
+              <div class="col-lg-6 col-sm-6">
+                <fieldset>
+                  <button type="submit" class="main-button">Subscribe Now <i class="fa fa-angle-right"></i></button>
+                </fieldset>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-3">
+          <div class="footer-widget">
+            <h4>Contact Us</h4>
+            <p>Rio de Janeiro - RJ, 22795-008, Brazil</p>
+            <p><a href="#">010-020-0340</a></p>
+            <p><a href="#">info@company.co</a></p>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="footer-widget">
+            <h4>About Us</h4>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Testimonials</a></li>
+              <li><a href="#">Pricing</a></li>
+            </ul>
+            <ul>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Testimonials</a></li>
+              <li><a href="#">Pricing</a></li>
             </ul>
           </div>
-          <div class="flex-1">
-            <p class="uppercase text-gray-500 md:mb-6">Legal</p>
-            <ul class="list-reset mb-6">
-              <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-                <a href="/Biskia/Terms" class="no-underline hover:underline text-gray-800 hover:text-pink-500">Terms</a>
-              </li>
-              <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-                <a href="/Biskia/Privacy" class="no-underline hover:underline text-gray-800 hover:text-pink-500">Privacy</a>
-              </li>
-			  <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-                <a href="/Biskia/Disclaimer" class="no-underline hover:underline text-gray-800 hover:text-pink-500">Disclaimer</a>
-              </li>
+        </div>
+        <div class="col-lg-3">
+          <div class="footer-widget">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><a href="#">Free Apps</a></li>
+              <li><a href="#">App Engine</a></li>
+              <li><a href="#">Programming</a></li>
+              <li><a href="#">Development</a></li>
+              <li><a href="#">App News</a></li>
             </ul>
-          </div>
-          <div class="flex-1">
-            <p class="uppercase text-gray-500 md:mb-6">Social</p>
-            <ul class="list-reset mb-6">
-              <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-                <a href="#" class="no-underline hover:underline text-gray-800 hover:text-pink-500"><del>Facebook</del></a>
-              </li>
-              <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-                <a href="#" class="no-underline hover:underline text-gray-800 hover:text-pink-500"><del>Instagram</del></a>
-              </li>
-              <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-                <a href="#" class="no-underline hover:underline text-gray-800 hover:text-pink-500"><del>Twitter</del></a>
-              </li>
-            </ul>
-          </div>
-          <div class="flex-1">
-            <p class="uppercase text-gray-500 md:mb-6">Company</p>
-            <ul class="list-reset mb-6">
-              <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-                <a href="/Biskia/Blog" class="no-underline hover:underline text-gray-800 hover:text-pink-500"> <del> Official Blog </del> </a>
-              </li>
-              <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-                <a href="/Biskia/About" class="no-underline hover:underline text-gray-800 hover:text-pink-500"> <del> About Us </del></a>
-              </li>    <div id="wrapper6">
-              <li class="mt-2 inline-block mr-2 md:block md:mr-0"> 
-                <a class="openbot6 no-underline hover:underline text-gray-800 hover:text-pink-500">Contact</a>
-              </li>    </div>
+            <ul>
+              <li><a href="#">App Dev Team</a></li>
+              <li><a href="#">Digital Web</a></li>
+              <li><a href="#">Normal Apps</a></li>
             </ul>
           </div>
         </div>
+        <div class="col-lg-3">
+          <div class="footer-widget">
+            <h4>About Our Company</h4>
+            <div class="logo">
+              <img src="assets/images/white-logo.png" alt="">
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+          </div>
+        </div>
+        <div class="col-lg-12">
+          <div class="copyright-text">
+            <p>Copyright © 2022 Chain App Dev Company. All Rights Reserved. 
+          <br>Design: <a href="https://templatemo.com/" target="_blank" title="css templates">TemplateMo</a></p>
+          </div>
+        </div>
       </div>
-      <center> <a href="#" class="text-gray-500">Biskia © 2021 </a> </center>
-   
-    </footer>
-    <!-- jQuery if you need it
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  -->
-    <script>
-      var scrollpos = window.scrollY;
-      var header = document.getElementById("header");
-      var navcontent = document.getElementById("nav-content");
-      var navaction = document.getElementById("navAction");
-      var brandname = document.getElementById("brandname");
-      var toToggle = document.querySelectorAll(".toggleColour");
-
-      document.addEventListener("scroll", function () {
-        /*Apply classes for slide in bar*/
-        scrollpos = window.scrollY;
-
-        if (scrollpos > 10) {
-          header.classList.add("bg-white");
-          navaction.classList.remove("bg-white");
-          navaction.classList.add("gradient");
-          navaction.classList.remove("text-gray-800");
-          navaction.classList.add("text-white");
-          //Use to switch toggleColour colours
-          for (var i = 0; i < toToggle.length; i++) {
-            toToggle[i].classList.add("text-gray-800");
-            toToggle[i].classList.remove("text-white");
-          }
-          header.classList.add("shadow");
-          navcontent.classList.remove("bg-gray-100");
-          navcontent.classList.add("bg-white");
-        } else {
-          header.classList.remove("bg-white");
-          navaction.classList.remove("gradient");
-          navaction.classList.add("bg-white");
-          navaction.classList.remove("text-white");
-          navaction.classList.add("text-gray-800");
-          //Use to switch toggleColour colours
-          for (var i = 0; i < toToggle.length; i++) {
-            toToggle[i].classList.add("text-white");
-            toToggle[i].classList.remove("text-gray-800");
-          }
-
-          header.classList.remove("shadow");
-          navcontent.classList.remove("bg-white");
-          navcontent.classList.add("bg-gray-100");
-        }
-      });
-    </script>
-    <script>
-      /*Toggle dropdown list*/
-      /*https://gist.github.com/slavapas/593e8e50cf4cc16ac972afcbad4f70c8*/
-
-      var navMenuDiv = document.getElementById("nav-content");
-      var navMenu = document.getElementById("nav-toggle");
-
-      document.onclick = check;
-      function check(e) {
-        var target = (e && e.target) || (event && event.srcElement);
-
-        //Nav Menu
-        if (!checkParent(target, navMenuDiv)) {
-          // click NOT on the menu
-          if (checkParent(target, navMenu)) {
-            // click on the link
-            if (navMenuDiv.classList.contains("hidden")) {
-              navMenuDiv.classList.remove("hidden");
-            } else {
-              navMenuDiv.classList.add("hidden");
-            }
-          } else {
-            // click both outside link and outside menu, hide menu
-            navMenuDiv.classList.add("hidden");
-          }
-        }
-      }
-      function checkParent(t, elm) {
-        while (t.parentNode) {
-          if (t == elm) {
-            return true;
-          }
-          t = t.parentNode;
-        }
-        return false;
-      }
-    </script>
-	
-	
-	<script SameSite="None; Secure" src="https://static.landbot.io/landbot-3/landbot-3.0.0.js"></script>
-<script>
-    var myLandbotpop = new Landbot.Livechat({
-      configUrl: 'https://chats.landbot.io/v3/H-1027270-J4AMMIBXTOVFYQ1D/index.json'
-    });
-    
-    var buttonOpen = document.getElementsByClassName("openbot")[0];
-    buttonOpen.addEventListener('click', (event) => {
-      event.preventDefault();
-      myLandbotpop.open()
-    });
-
-</script>
-
-<script>
-    var myLandbotpop = new Landbot.Livechat({
-      configUrl: 'https://chats.landbot.io/v3/H-1027270-J4AMMIBXTOVFYQ1D/index.json'
-    });
-    
-    var buttonOpen = document.getElementsByClassName("openbot2")[0];
-    buttonOpen.addEventListener('click', (event) => {
-      event.preventDefault();
-      myLandbotpop.open()
-    });
-
-</script>
-
-<script>
-    var myLandbotpop = new Landbot.Livechat({
-      configUrl: 'https://chats.landbot.io/v3/H-1027270-J4AMMIBXTOVFYQ1D/index.json'
-    });
-    
-    var buttonOpen = document.getElementsByClassName("openbot3")[0];
-    buttonOpen.addEventListener('click', (event) => {
-      event.preventDefault();
-      myLandbotpop.open()
-    });
-
-</script>
-
-<script>
-    var myLandbotpop = new Landbot.Livechat({
-      configUrl: 'https://chats.landbot.io/v3/H-1027270-J4AMMIBXTOVFYQ1D/index.json'
-    });
-    
-    var buttonOpen = document.getElementsByClassName("openbot4")[0];
-    buttonOpen.addEventListener('click', (event) => {
-      event.preventDefault();
-      myLandbotpop.open()
-    });
-
-</script>
-
-<script>
-    var myLandbotpop = new Landbot.Livechat({
-      configUrl: 'https://chats.landbot.io/v3/H-1027270-J4AMMIBXTOVFYQ1D/index.json'
-    });
-    
-    var buttonOpen = document.getElementsByClassName("openbot5")[0];
-    buttonOpen.addEventListener('click', (event) => {
-      event.preventDefault();
-      myLandbotpop.open()
-    });
-
-</script>
-
-<script>
-    var myLandbotpop = new Landbot.Livechat({
-      configUrl: 'https://chats.landbot.io/v3/H-1027270-J4AMMIBXTOVFYQ1D/index.json'
-    });
-    
-    var buttonOpen = document.getElementsByClassName("openbot6")[0];
-    buttonOpen.addEventListener('click', (event) => {
-      event.preventDefault();
-      myLandbotpop.open()
-    });
-
-</script>
-
-<script>
-    var myLandbotpop = new Landbot.Livechat({
-      configUrl: 'https://chats.landbot.io/v3/H-1027270-J4AMMIBXTOVFYQ1D/index.json'
-    });
-    
-    var buttonOpen = document.getElementsByClassName("openbot7")[0];
-    buttonOpen.addEventListener('click', (event) => {
-      event.preventDefault();
-      myLandbotpop.open()
-    });
-
-</script>
+    </div>
+  </footer>
 
 
-  </body>
+  <!-- Scripts -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/owl-carousel.js"></script>
+  <script src="assets/js/animation.js"></script>
+  <script src="assets/js/imagesloaded.js"></script>
+  <script src="assets/js/popup.js"></script>
+  <script src="assets/js/custom.js"></script>
+</body>
 </html>
