@@ -103,11 +103,7 @@ https://templatemo.com/tm-570-chain-app-dev
                   <div class="col-lg-12">
                     <h2>Amazon Alexa Skill Entwicklung</h2>
                     <p>Gewinnen Sie mehr Kunden, erhöhen Sie Ihre Reichweite und steigern Sie die Kundenzufriedenheit! <br /> <br /> Wir erledigen die Arbeit für Sie!</p>
-                  </div> <script>
-    document.getElementById('switch_id').addEventListener("change", function(){
-        if (this.checked) window.location.href = 'http://www.mynewpage.com';
-    });
-</script>
+                  </div>
                   <div class="col-lg-12">
                     <div class="white-button first-button scroll-to-section">
                       <a href="#services">Mehr Infos</a>
@@ -115,6 +111,11 @@ https://templatemo.com/tm-570-chain-app-dev
                     <div class="white-button scroll-to-section">
                       <a href="https://chats.landbot.io/v3/H-1084551-EWRMEJPFC7YR1RZT/index.html" target="_blank">Kontakt</a>
                     </div>
+<div class= "switch">
+ <label for="title"><b>Switch to redirect:</b>
+   <input type="checkbox" data-role="flipswitch" name="switch" id="switch">
+ </label>
+</div>
                   </div>
                 </div>
               </div>
@@ -758,5 +759,12 @@ https://templatemo.com/tm-570-chain-app-dev
   <script src="assets/js/popup.js"></script>
   <script src="assets/js/custom.js"></script>
    <script type="text/javascript" id="hs-script-loader" async defer src="//js-eu1.hs-scripts.com/25414971.js"></script>
+document.getElementById('switch').onchange = function(){
+  if(this.checked){
+   window.location='en.html';
+  } else {
+   window.location='de.html';
+  }
+};
 </body>
 </html>
