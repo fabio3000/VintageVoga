@@ -1,0 +1,229 @@
+* 
+
+
+
+.subscribtion {
+  width: 100%;
+  overflow: hidden;
+  padding: 12px;
+  margin-bottom: 24px;
+  border: 2px solid #f1f2f6;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.subscribtion:nth-child(1) {
+  margin-top: 24px;
+}
+.subscribtion h2 {
+  width: 100%;
+  font-weight: 700;
+  font-size: 1.4em;
+  letter-spacing: 2px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #f1f2f6;
+  margin-bottom: 8px;
+}
+.subscribtion p {
+  width: 80%;
+  font-size: 0.8em;
+  line-height: 1.4em;
+}
+.subscribtion:hover {
+  box-shadow: 0px 0px 10px 0px #ff6b81;
+}
+
+.subscribtion.hidden {
+  height: 0;
+  margin: 0;
+  padding-bottom: 0;
+  padding-top: 0;
+  opacity: 0;
+}
+
+.form {
+  width: 100%;
+  opacity: 0;
+}
+.form.active {
+  opacity: 1;
+}
+.form label {
+  display: block;
+  width: 100%;
+  font-size: 0.6em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.form input {
+  width: 100%;
+  padding: 8px;
+  border: none;
+  background: none;
+  border-bottom: 1px solid #f1f2f6;
+  margin-bottom: 12px;
+  font-size: 0.8em;
+  color: #f1f2f6;
+  letter-spacing: 1px;
+}
+.form input::-webkit-input-placeholder {
+  color: #009432;
+  -webkit-transition: 0.2s ease-in-out;
+  -moz-transition: 0.2s ease-in-out;
+  -o-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+.form input::-moz-placeholder {
+  color: #009432;
+  -webkit-transition: 0.2s ease-in-out;
+  -moz-transition: 0.2s ease-in-out;
+  -o-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+.form input:-ms-input-placeholder {
+  color: #009432;
+  -webkit-transition: 0.2s ease-in-out;
+  -moz-transition: 0.2s ease-in-out;
+  -o-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+.form input:-moz-placeholder {
+  color: #009432;
+  -webkit-transition: 0.2s ease-in-out;
+  -moz-transition: 0.2s ease-in-out;
+  -o-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+.form input:focus::-webkit-input-placeholder {
+  color: #f1f2f6;
+}
+.form input:focus::-moz-placeholder {
+  color: #f1f2f6;
+}
+.form input:focus:-ms-input-placeholder {
+  color: #f1f2f6;
+}
+.form input:focus:-moz-placeholder {
+  color: #f1f2f6;
+}
+
+.payment {
+  margin-top: 12px;
+}
+
+.btn {
+  width: 30.33%;
+  float: left;
+  margin-right: 4%;
+  margin-top: 12px;
+  height: 40px;
+  padding-top: 12px;
+  text-align: center;
+  background-color: #f1f2f6;
+  color: #2EBD59;
+  font-weight: 700;
+  font-size: 0.8em;
+  letter-spacing: 2px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+}
+.btn i {
+  margin-left: 8px;
+}
+
+.klarna {
+  background-color: #fa82a0;
+}
+.klarna img {
+  width: 50%;
+  height: auto;
+  margin-top: 2px;
+}
+.klarna:hover, .klarna.active {
+  background-color: #F9688D;
+}
+
+.paypal {
+  background-color: #009cde;
+}
+.paypal img {
+  width: 60%;
+  height: auto;
+}
+.paypal:hover, .paypal.active {
+  background-color: #008DCE;
+}
+
+.card {
+  margin-right: 0;
+}
+.card:hover, .card.active {
+  box-shadow: 0px 0px 10px 0px #ff6b81;
+}
+
+.fivegram-button {
+  width: 100%;
+  margin-right: 0;
+  margin-top: 8px;
+  display: none;
+}
+.fivegram-button:hover {
+  box-shadow: 0px 0px 10px 0px #ff6b81;
+}
+.fivegram-button.active {
+  display: block;
+}
+
+.next {
+  width: 100%;
+  margin-right: 0;
+  margin-top: 12px;
+}
+.next i {
+  color: #2EBD59;
+  margin-left: 8px;
+}
+.next:hover i {
+  margin-left: 12px;
+}
+
+.fivegram-form.hidden {
+  height: 0;
+  opacity: 0;
+  display: none;
+}
+
+#auswahl {
+  display: none;
+}
+
+#form {
+    display: none;
+  }
+
+  .subscribtion.fivegram {
+    width: 400px; 
+  }
+  @media (max-width: 768px) {
+    .subscribtion.fivegram {
+      width: 350px; /* Breite für Handys */
+    }
+  }
+  .subscribtion.tengram {
+    visibility: hidden;
+    display: none;
+  }
+  .subscribtion.twentyfivegram {
+    visibility: hidden;
+    display: none;
+  }
+  .subscribtion.fiftygram {
+    visibility: hidden;
+    display: none;
+  }
