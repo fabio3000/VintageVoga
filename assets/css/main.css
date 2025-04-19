@@ -1658,3 +1658,69 @@ input, select, textarea {
 		body.is-preload #footer {
 			opacity: 0;
 		}
+
+
+
+
+
+
+
+/* Grid für Pieces */
+.pieces-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+/* Card‑Styling */
+.piece-card {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  position: relative;
+}
+
+/* Bild innerhalb der Card */
+.piece-card img {
+  max-width: 100%;
+  border-radius: 4px;
+  margin-bottom: 0.5rem;
+}
+
+/* Verschwommene Infos */
+.blurred {
+  filter: blur(5px);
+  transition: filter 0.3s ease;
+}
+
+/* Wenn freigeschaltet */
+.unblurred {
+  filter: none !important;
+}
+
+/* Formular & Feedback */
+.unlock-form {
+  margin-top: 1rem;
+}
+.unlock-form .code-input {
+  width: calc(100% - 80px);
+  padding: 0.4rem;
+}
+.unlock-form .unlock-btn {
+  padding: 0.4rem 0.8rem;
+  margin-left: 0.5rem;
+}
+.unlock-feedback {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  color: #c00;
+}
+
+
+
+
+
+
+
