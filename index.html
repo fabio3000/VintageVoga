@@ -139,6 +139,32 @@
 		<script src="assets/js/breakpoints.min.js"></script>
 		<script src="assets/js/util.js"></script>
 		<script src="assets/js/main.js"></script>
+		<script>
+// Sobald der DOM geladen ist
+document.addEventListener('DOMContentLoaded', function() {
+  // Für jede Card eine Logik einrichten
+  document.querySelectorAll('.piece-card').forEach(function(card) {
+    const correctCode = card.getAttribute('data-code');
+    const input    = card.querySelector('.code-input');
+    const button   = card.querySelector('.unlock-btn');
+    const infoDiv  = card.querySelector('.secret-info');
+    const feedback = card.querySelector('.unlock-feedback');
+
+    button.addEventListener('click', function() {
+      if (input.value.trim() === correctCode) {
+        // Entsperren
+        infoDiv.classList.remove('blurred');
+        infoDiv.classList.add('unblurred');
+        feedback.textContent = 'Unlocked! Viel Spaß. 😊';
+        feedback.style.color = 'green';
+      } else {
+        // Fehlermeldung
+        feedback.textContent = 'Falscher Code. Versuch’s nochmal.';
+      }
+    });
+  });
+});
+</script>
 
 	</body>
 </html>
